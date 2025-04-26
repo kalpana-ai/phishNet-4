@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "PhishNet",
+    "version": "1.0",
+    "description": "Analyzes URLs, forms, and email links for phishing detection.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "webRequest",
+      "notifications",
+      "storage"
+    ],
+    "host_permissions": [
+      "*://*/*",
+      "http://*/*",
+      "https://*/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      },
+      {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["emailScanner.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "secure.png"
+    }
+  }

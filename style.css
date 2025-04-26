@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+  width: 330px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Futuristic Blue Gradient */
+  color: #ffffff;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #00ffff;
+  border-bottom: 2px solid #00ffff;
+  padding-bottom: 8px;
+}
+
+#score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(0, 255, 255, 0.1);
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+}
+
+#warnings p {
+  margin: 8px 0;
+  padding: 10px;
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff6b6b;
+  border: 1px solid #ff6b6b;
+}
+
+#generateReport {
+  width: 100%;
+  padding: 12px;
+  background: #00a8ff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#generateReport:hover {
+  background: #0097e6;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+#report {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  color: #ffffff;
+  border: 1px solid #00ffff;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
