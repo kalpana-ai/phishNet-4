@@ -13,8 +13,6 @@ phishNet-4 is a web extension designed to detect and prevent phishing attacks. I
 
 ## Technology Stack
 * Frontend: JavaScript, HTML, CSS
-* Backend: None
-* Database: None
 * ML: Machine Learning
 * Libs: JavaScript libraries
 
